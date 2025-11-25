@@ -1,0 +1,496 @@
+<!-- Made by Tomás Matos | Internship from Colégio de Gaia - Escola Católica | Reachable on tomasmatos007@gmail.com -->
+
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serviços | APPACDM — Vila Nova de Gaia | Uma vida a cultivar sorrisos</title>
+    <meta name="author" content="APPACDM GAIA" />
+    <meta
+      name="description"
+      content="Conheça os serviços da APPACDM de Vila Nova de Gaia."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/uploads/shortcut_icon.png"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/global_organized.css" />
+
+    <link rel="stylesheet" href="css/servicos.css" />
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header class="primary-header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">
+          <img
+            src="assets/uploads/50anos.jpg"
+            alt="Logótipo 50 anos da APPACDM Gaia"
+          />
+        </a>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Bem-vindo</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="servicos.html" class="nav-link">Quero ajudar</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link"
+                >Instituição <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="instituicao/mensagem-presidente.html"
+                    >Mensagem do Presidente</a
+                  >
+                </li>
+                <li>
+                  <a href="instituicao/missao-visao-valores.html"
+                    >Missão, Visão e Valores</a
+                  >
+                </li>
+                <li>
+                  <a href="instituicao/orgaos-sociais.html">Órgãos Sociais</a>
+                </li>
+                <li>
+                  <a href="instituicao/recursos-humanos.html"
+                    >Recursos Humanos</a
+                  >
+                </li>
+                <li>
+                  <a href="instituicao/livro-reclamacoes.html"
+                    >Livro de Reclamações</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="servicos.html" class="nav-link active">Serviços</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="projetos.html" class="nav-link"
+                >Projetos <i class="fa-solid"></i
+              ></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contactos.html" class="nav-link">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+<!--Abandonado
+        <button class="mobile-menu-toggle" aria-label="Menu principal">
+          <span class="hamburger"></span>
+        </button>-->
+      </div>
+    </header>
+
+    <main>
+      <!-- Secção Hero -->
+      <section class="servicos-hero">
+        <div class="container">
+          <h1 class="servicos-title">Os Nossos Serviços</h1>
+          <p class="servicos-subtitle">
+            Conheça as respostas sociais da APPACDM de Vila Nova de Gaia
+          </p>
+        </div>
+      </section>
+
+      <!-- Secção Serviços -->
+      <section class="servicos-options">
+        <div class="container">
+
+        <div class="servicos-grid">
+          <div class="servicos-card">
+            <div class="servicos-icon">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+            <h3>CACI</h3>
+            <p>
+              Centro de Atividades e Capacitação para a Inclusão - promovendo
+              autonomia e integração social através de atividades ocupacionais.
+            </p>
+            <a class="btn" id="btn-caci">Saber Mais</a>
+          </div>
+
+          <div class="servicos-card">
+            <div class="servicos-icon">
+              <i class="fas fa-child"></i>
+            </div>
+            <h3>IPI</h3>
+            <p>
+              Intervenção Precoce na Infância - apoio especializado a crianças
+              dos 0 aos 6 anos e suas famílias para um desenvolvimento saudável.
+            </p>
+            <a class="btn" id="btn-ipi">Saber Mais</a>
+          </div>
+
+          <div class="servicos-card">
+            <div class="servicos-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h3>Lar Residencial</h3>
+            <p>
+              Alojamento e apoio residencial que promove qualidade de vida,
+              autonomia e bem-estar dos nossos utentes.
+            </p>
+            <a class="btn" id="btn-lr">Saber Mais</a>
+          </div>
+
+          <div class="servicos-card">
+            <div class="servicos-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Socioeducativo</h3>
+            <p>
+              Reabilitação em educação especial para crianças e jovens dos 6 aos
+              18 anos através de programas individualizados.
+            </p>
+            <a class="btn" id="btn-socioeducativo">Saber Mais</a>
+          </div>
+        </div>
+
+        <!-- Modais para cada serviço -->
+        <div id="modal-caci" class="modal">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Centro de Atividades e Capacitação para a Inclusão (CACI)</h2>
+            
+            <h3>Objetivo</h3>
+            <ul>
+              <li>
+                Promover o bem-estar, o desenvolvimento pessoal, a autonomia
+                e a integração social de pessoas com deficiência mental, com
+                idade igual ou superior a 16 anos, através da realização de
+                atividades ocupacionais.
+              </li>
+              <li>
+                As atividades são desenvolvidas tendo em conta o perfil
+                individual de cada cliente, definindo-se um Plano Individual
+                de Intervenção (PII).
+              </li>
+              <li>
+                Sempre que possível, as atividades complementares são
+                desenvolvidas na comunidade, recorrendo a parcerias.
+              </li>
+              <li>
+                Paralelamente às atividades definidas no PII, são ainda
+                realizadas diversas atividades de caráter lúdico, cultural e
+                desportivo.
+              </li>
+            </ul>
+
+            <div class="servico-info">
+              <div class="info-box">
+                <h4>Equipa Técnica</h4>
+                <ul>
+                  <li>Diretora Técnica</li>
+                  <li>Psicóloga</li>
+                  <li>Assistente Social</li>
+                  <li>Terapeutas Ocupacionais</li>
+                  <li>Animador Cultural</li>
+                  <li>Monitores</li>
+                  <li>
+                    Ajudantes de Estabelecimento de Apoio a Pessoas com
+                    Deficiência
+                  </li>
+                </ul>
+              </div>
+
+              <div class="info-box">
+                <h4>Legislação Aplicável</h4>
+                <ul>
+                  <li>Portaria nº 70/2021 de 26 de março</li>
+                  <li>Portaria n.º 432/2006, de 3 de Maio</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-ipi" class="modal">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Intervenção Precoce na Infância (IPI)</h2>
+            
+            <h3>Atividades</h3>
+            <ul>
+              <li>
+                Integrada na Equipa Local de Intervenção de Gaia, a resposta
+                social de Intervenção Precoce na Infância da APPACDM de Vila
+                Nova de Gaia, tem como objetivo prestar apoio, integrado em
+                Domicílio, Ama, Creche ou Jardins-de-Infância, a crianças
+                entre os zero e os seis anos, com alterações nas funções ou
+                estruturas do corpo que limitam a participação nas
+                atividades típicas para a respectiva idade e contexto social
+                ou com risco grave de atraso de desenvolvimento, bem como às
+                suas famílias.
+              </li>
+              <li>
+                Para cada criança, é realizada uma avaliação, tendo por
+                objectivo o despiste de alterações ou risco de atraso grave
+                do desenvolvimento e é realizado o encaminhamento mais
+                adequado para cada caso.
+              </li>
+              <li>
+                É elaborado um Plano Individual de Intervenção Precoce na
+                Infância (PIIP) que define os apoios a prestar consoante as
+                necessidades identificadas.
+              </li>
+              <li>
+                Procura-se otimizar as condições de interação
+                criança/família, mediante informação sobre a problemática em
+                causa.
+              </li>
+              <li>
+                Promove-se o trabalho de equipa seguindo um modelo
+                transdisciplinar e colaborando com todos os intervenientes
+                no processo educativo.
+              </li>
+            </ul>
+
+            <h3>Áreas de Intervenção</h3>
+            <ul>
+              <li>Psicologia</li>
+              <li>Serviço Social</li>
+              <li>Terapia da Fala</li>
+              <li>Terapia Ocupacional</li>
+            </ul>
+
+            <h3>Âmbito geográfico de atendimento</h3>
+            <p>
+              Concelho de Vila Nova de Gaia - Freguesias: Avintes, Canidelo,
+              Mafamude, Oliveira do Douro, Santa Marinha, São Pedro da
+              Afurada e Vilar de Andorinho.
+            </p>
+
+            <div class="servico-info">
+              <div class="info-box">
+                <h4>Equipa Técnica</h4>
+                <ul>
+                  <li>Diretora Técnica - Assistente Social</li>
+                  <li>Psicólogo</li>
+                  <li>Terapeuta Ocupacional</li>
+                  <li>Terapeuta da Fala</li>
+                </ul>
+              </div>
+
+              <div class="info-box">
+                <h4>Legislação Aplicável</h4>
+                <ul>
+                  <li>Decreto-Lei n.º 54/2018, de 6 de julho</li>
+                  <li>Decreto-Lei n.º 281/2009, de 6 de Outubro</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-lr" class="modal">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Lar Residencial</h2>
+            <p>
+              O Lar Residencial da APPACDM disponibiliza alojamento e apoio
+              residencial permanente ou temporário para jovens e adultos com
+              deficiência mental, com idade igual ou superior a 16 anos.
+            </p>
+            <p>
+              <strong>Serviços assegurados:</strong>
+            </p>
+            <ul>
+              <li>Serviço de alojamento</li>
+              <li>Refeições</li>
+              <li>Tratamento de roupa</li>
+              <li>Administração da medicação prescrita</li>
+              <li>Cuidados de saúde prescritos</li>
+              <li>Higiene e conforto pessoal</li>
+            </ul>
+            <p>
+              <strong>Objetivo:</strong> Promover condições de vida que
+              contribuam para o bem-estar, reforço da auto-estima, valorização e
+              autonomia pessoal e social dos utentes.
+            </p>
+          </div>
+        </div>
+
+        <div id="modal-socioeducativo" class="modal">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Socioeducativo</h2>
+            <p>
+              O serviço Socioeducativo destina-se à reabilitação de crianças e
+              jovens entre os 6 e os 18 anos, em regime de educação especial,
+              através de programas individualizados.
+            </p>
+            <p>
+              <strong>Atividades desenvolvidas:</strong>
+            </p>
+            <ul>
+              <li>Matemática e Português Funcional</li>
+              <li>Estudo do Meio e Treino Social</li>
+              <li>Estimulação Sensorial</li>
+              <li>Atividades da Vida Diária</li>
+              <li>Informática, Movimento, Música e Drama</li>
+              <li>Educação Física e Psicomotricidade</li>
+              <li>Terapia Ocupacional e Terapia da Fala</li>
+              <li>Fisioterapia e Desenvolvimento Pessoal</li>
+            </ul>
+            <p>
+              Cada cliente tem um Currículo Específico Individual (CEI)
+              integrado no seu Programa Educativo Individual (PEI).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- contactos -->
+      <section class="newsletter-seccao">
+        <div class="container">
+          <div class="newsletter-conteudo">
+            <h2>Tem alguma questão?</h2>
+            <p>
+              Se pretende obter mais informações sobre como pode ajudar, não
+              hesite em contactar-nos.
+            </p>
+            <a href="contactos.html" class="btn btn-primary">Contacte-nos</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+          <div class="footer-top">
+              <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+          <i class="fa-solid fa-arrow-up"></i>
+      </button>
+          </div>
+          
+          <div class="footer-conteudo">
+              <div class="footer-info">
+                  <h3>APPACDM de Vila Nova de Gaia</h3>
+                  <p><i class="fas fa-map-marker-alt"></i> Rua Madre de Deus, 227 4430-138 V.N. Gaia</p>
+                  <p><i class="fas fa-phone"></i> <a href="tel:+351227151340">227 151 340</a><a style="font-size: 10px;"> &nbsp;&nbsp;&nbsp;(Chamada para a rede fixa nacional)</a></p>
+                  <p><i class="fas fa-envelope"></i> <a href="mailto:geral@appacdm-gaia.org.pt">geral@appacdm-gaia.org.pt</a></p>
+              </div>
+              
+              <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="regime-geral-prevencao-corrupcao.html">Regime Geral de Prevenção da Corrupção</a></li>
+                    <li><a href="canal-denuncia-interna.html">Canal de Denúncia Interna</a></li>
+                    <li><a href="instituicao/livro-reclamacoes.html">Livro de Reclamações</a></li>
+                    <li><a href="politicas-privacidade.html">Políticas de Privacidade</a></li>
+                </ul>
+            </div>
+              
+              <div class="footer-social">
+                  <h3>Siga-nos</h3>
+                  <div class="social-icons">
+                      <a href="https://www.facebook.com/appacdmvngaia" aria-label="Facebook">
+                          <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                      <a href="https://www.instagram.com/appacdmgaia" aria-label="Instagram">
+                          <i class="fa-brands fa-instagram"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="footer-bottom">
+              <p>&copy; 2024 APPACDM - GAIA — Desenvolvido por <span class="designer">Tomás Matos</span></p>
+          </div>
+      </div>
+  </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Aguarda o carregamento completo do DOM
+      document.addEventListener("DOMContentLoaded", function () {
+        // Objeto para armazenar referências dos modais
+        const modals = {
+          caci: document.getElementById("modal-caci"),
+          ipi: document.getElementById("modal-ipi"),
+          lr: document.getElementById("modal-lr"),
+          socioeducativo: document.getElementById("modal-socioeducativo"),
+        };
+
+        // Event listeners para os botões "Saber Mais"
+        document
+          .getElementById("btn-caci")
+          .addEventListener("click", function () {
+            modals.caci.style.display = "block";
+          });
+
+        document
+          .getElementById("btn-ipi")
+          .addEventListener("click", function () {
+            modals.ipi.style.display = "block";
+          });
+
+        document
+          .getElementById("btn-lr")
+          .addEventListener("click", function () {
+            modals.lr.style.display = "block";
+          });
+
+        document
+          .getElementById("btn-socioeducativo")
+          .addEventListener("click", function () {
+            modals.socioeducativo.style.display = "block";
+          });
+
+        // Event listeners para os botões de fechar modal
+        const closeButtons = document.querySelectorAll(".close-modal");
+        closeButtons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            // Fechar todos os modais
+            for (const key in modals) {
+              modals[key].style.display = "none";
+            }
+          });
+        });
+
+        // Fechar modal ao clicar fora da área de conteúdo
+        window.addEventListener("click", function (event) {
+          for (const key in modals) {
+            if (event.target === modals[key]) {
+              modals[key].style.display = "none";
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

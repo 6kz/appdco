@@ -1,0 +1,492 @@
+<!-- Made by Tomás Matos | Internship from Colégio de Gaia - Escola Católica | Reachable on tomasmatos007@gmail.com -->
+
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" conteudo="width=device-width, initial-scale=1.0" />
+    <title>
+      Recursos Humanos | APPACDM — Vila Nova de Gaia | Uma vida a cultivar
+      sorrisos
+    </title>
+    <meta name="author" conteudo="APPACDM GAIA" />
+    <meta name="description" conteudo="Uma vida a cultivar sorrisos." />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/uploads/shortcut_icon.png"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="../css/global_organized.css" />
+    <link rel="stylesheet" href="../css/recursos-humanos.css" />
+   
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header class="primary-header">
+      <div class="container header-container">
+        <a href="../index.html" class="logo">
+          <img
+            src="../assets/uploads/50anos.jpg"
+            alt="Logótipo 50 anos da APPACDM Gaia"
+          />
+        </a>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Bem-vindo</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="../ajudar.html" class="nav-link">Quero ajudar</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link"
+                >Instituição <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="mensagem-presidente.html">Mensagem do Presidente</a>
+                </li>
+                <li>
+                  <a href="missao-visao-valores.html"
+                    >Missão, Visão e Valores</a
+                  >
+                </li>
+                <li><a href="orgaos-sociais.html">Órgãos Sociais</a></li>
+                <li><a href="recursos-humanos.html">Recursos Humanos</a></li>
+                <li>
+                  <a href="livro-reclamacoes.html">Livro de Reclamações</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="../servicos.html" class="nav-link">Serviços</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="../projetos.html" class="nav-link"
+                >Projetos <i class="fa-solid"></i
+              ></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="../contactos.html" class="nav-link">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <!--Abanbonado
+        <button class="mobile-menu-toggle" aria-label="Menu principal">
+          <span class="hamburger"></span>
+        </button>-->
+      </div>
+    </header>
+
+    <main>
+      <!-- Secção do Portal do Colaborador -->
+      <section class="seccao-portal">
+        <div class="container">
+          <div class="grelha-portal">
+            <div class="imagem-portal">
+              <img
+                src="../assets/uploads/aae26-azul-formatura-eventos-site.png"
+                alt="Portal do Colaborador"
+              />
+            </div>
+            <div class="conteudo-portal">
+              <div class="ligacoes-portal">
+                <a
+                  href="http://appacdmservidor.ddns.net:8181/default.aspx?l=1"
+                  class="ligacao-portal"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i> Portal do Colaborador
+                </a>
+
+                <div class="espaco"></div>
+
+                <div class="informacao-recrutamento">
+                  <h3><i class="fas fa-users"></i> Recrutamento</h3>
+                  <p>
+                    Conheça as nossas oportunidades de carreira ou envie a sua
+                    candidatura espontânea para
+                    <a
+                      href="mailto:geral@appacdm-gaia.org.pt"
+                      style="color: var(--primary-color); font-weight: 500"
+                      >geral@appacdm-gaia.org.pt</a
+                    >
+                    ou através do formulário abaixo.
+                  </p>
+                  <p>
+                    Junte-se à nossa equipa e faça parte de uma instituição que
+                    transforma vidas há mais de 50 anos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secção do Formulário de Candidatura -->
+      <section class="seccao-formulario-candidatura">
+        <div class="container">
+          <div class="cabecalho-formulario">
+            <h2>Candidatura Espontânea</h2>
+            <p>
+              Preencha o formulário abaixo para se candidatar às nossas
+              oportunidades de carreira
+            </p>
+          </div>
+
+          <div class="contentor-formulario">
+            <form
+              class="formulario-candidatura"
+              method="POST"
+              action="../assets/php/candidatura.php"
+              enctype="multipart/form-data"
+            >
+              <h3><i class="fas fa-user"></i> Dados Pessoais</h3>
+
+              <div class="grupo-formulario">
+                <input
+                  type="text"
+                  name="nome"
+                  placeholder="Nome completo *"
+                  required
+                  aria-label="Nome completo"
+                />
+              </div>
+
+              <div class="grupo-formulario">
+                <textarea
+                  name="morada"
+                  placeholder="Morada completa *"
+                  rows="3"
+                  required
+                  aria-label="Morada"
+                ></textarea>
+              </div>
+
+              <div class="linha-formulario">
+                <div class="grupo-formulario">
+                  <input
+                    type="text"
+                    name="codigo_postal"
+                    placeholder="Código Postal *"
+                    required
+                    aria-label="Código Postal"
+                  />
+                </div>
+                <div class="grupo-formulario">
+                  <input
+                    type="text"
+                    name="localidade"
+                    placeholder="Localidade *"
+                    required
+                    aria-label="Localidade"
+                  />
+                </div>
+              </div>
+
+              <div class="linha-formulario">
+                <div class="grupo-formulario">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Endereço de email *"
+                    required
+                    aria-label="Email"
+                  />
+                </div>
+                <div class="grupo-formulario">
+                  <input
+                    type="tel"
+                    name="telefone"
+                    placeholder="Telefone"
+                    aria-label="Telefone"
+                  />
+                </div>
+              </div>
+
+              <div class="linha-formulario">
+                <div class="grupo-formulario">
+                  <input
+                    type="tel"
+                    name="telemovel"
+                    placeholder="Telemóvel *"
+                    required
+                    aria-label="Telemóvel"
+                  />
+                </div>
+                <div class="grupo-formulario">
+                  <input
+                    type="date"
+                    name="data_nascimento"
+                    aria-label="Data de nascimento"
+                  />
+                </div>
+              </div>
+
+              <h3 style="margin-top: 3rem">
+                <i class="fas fa-briefcase"></i> Informações Profissionais
+              </h3>
+
+              <div class="grupo-formulario">
+                <select
+                  name="area_interesse"
+                  required
+                  aria-label="Área de interesse"
+                >
+                  <option value="">Selecione a área de interesse *</option>
+                  <option value="educacao">Educação e Formação</option>
+                  <option value="psicologia">Psicologia</option>
+                  <option value="terapia_ocupacional">
+                    Terapia Ocupacional
+                  </option>
+                  <option value="terapia_fala">Terapia da Fala</option>
+                  <option value="fisioterapia">Fisioterapia</option>
+                  <option value="servico_social">Serviço Social</option>
+                  <option value="animacao">Animação Sociocultural</option>
+                  <option value="cuidados_pessoais">
+                    Cuidados de Apoio à Pessoa
+                  </option>
+                  <option value="administrativa">Área Administrativa</option>
+                  <option value="manutencao">
+                    Manutenção e Serviços Gerais
+                  </option>
+                  <option value="cozinha">Cozinha e Alimentação</option>
+                  <option value="outras">Outras</option>
+                </select>
+              </div>
+
+              <div class="linha-formulario">
+                <div class="grupo-formulario">
+                  <select
+                    name="nivel_escolaridade"
+                    required
+                    aria-label="Nível de escolaridade"
+                  >
+                    <option value="">Nível de escolaridade *</option>
+                    <option value="basico">Ensino Básico (9º ano)</option>
+                    <option value="secundario">
+                      Ensino Secundário (12º ano)
+                    </option>
+                    <option value="profissional">Curso Profissional</option>
+                    <option value="licenciatura">Licenciatura</option>
+                    <option value="mestrado">Mestrado</option>
+                    <option value="doutoramento">Doutoramento</option>
+                  </select>
+                </div>
+                <div class="grupo-formulario">
+                  <select
+                    name="disponibilidade"
+                    required
+                    aria-label="Disponibilidade"
+                  >
+                    <option value="">Disponibilidade *</option>
+                    <option value="imediata">Imediata</option>
+                    <option value="1_mes">1 mês</option>
+                    <option value="2_meses">2 meses</option>
+                    <option value="3_meses">3 meses ou mais</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grupo-formulario">
+                <textarea
+                  name="experiencia_profissional"
+                  placeholder="Experiência profissional relevante"
+                  rows="4"
+                  aria-label="Experiência profissional"
+                ></textarea>
+              </div>
+
+              <div class="grupo-formulario">
+                <textarea
+                  name="observacoes"
+                  placeholder="Observações adicionais ou motivação para trabalhar connosco"
+                  rows="4"
+                  aria-label="Observações"
+                ></textarea>
+              </div>
+
+              <div class="grupo-formulario">
+                <div class="carregamento-ficheiro">
+                  <label for="curriculo">
+                    <i class="fas fa-upload"></i> Carregar Currículo (PDF, DOC,
+                    DOCX)
+                  </label>
+                  <input
+                    type="file"
+                    id="curriculo"
+                    name="curriculo"
+                    accept=".pdf,.doc,.docx"
+                    required
+                  />
+                  <div class="nome-ficheiro" id="nome-ficheiro">
+                    Nenhum ficheiro selecionado
+                  </div>
+                </div>
+              </div>
+
+              <div class="consentimento-formulario">
+                <small>
+                  <strong>Proteção de Dados:</strong> Ao submeter este
+                  formulário, consente que os seus dados pessoais sejam tratados
+                  pela APPACDM de Vila Nova de Gaia para fins de recrutamento.
+                  Os seus dados serão mantidos em segurança e não serão
+                  partilhados com terceiros sem o seu consentimento. Pode
+                  solicitar o acesso, retificação ou eliminação dos seus dados a
+                  qualquer momento através do email
+                  <a
+                    href="mailto:geral@appacdm-gaia.org.pt"
+                    style="color: var(--primary-color)"
+                    >geral@appacdm-gaia.org.pt</a
+                  >.
+                </small>
+              </div>
+
+              <div class="submissao-formulario">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane"></i> Submeter Candidatura
+                </button>
+
+                <button
+                  type="reset"
+                  style="margin-left: 1rem"
+                  class="btn btn-primary"
+                  onclick="window.scrollTo({top: 585, behavior: 'smooth'})"
+                >
+                  <i class="fas fa-trash"></i> Limpar Formulário
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-top">
+          <button
+            class="back-to-top"
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+          >
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+        </div>
+
+        <div class="footer-conteudo">
+          <div class="footer-info">
+            <h3>APPACDM de Vila Nova de Gaia</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Rua Madre de Deus, 227
+              4430-138 V.N. Gaia
+            </p>
+            <p>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+351227151340">227 151 340</a
+              ><a style="font-size: 10px">
+                &nbsp;&nbsp;&nbsp;(Chamada para a rede fixa nacional)</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:geral@appacdm-gaia.org.pt"
+                >geral@appacdm-gaia.org.pt</a
+              >
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="../regime-geral-prevencao-corrupcao.html">Regime Geral de Prevenção da Corrupção</a></li>
+                <li><a href="../canal-denuncia-interna.html">Canal de Denúncia Interna</a></li>
+                <li><a href="livro-reclamacoes.html">Livro de Reclamações</a></li>
+                <li><a href="../politicas-privacidade.html">Políticas de Privacidade</a></li>
+            </ul>
+        </div>
+
+          <div class="footer-social">
+            <h3>Siga-nos</h3>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/appacdmvngaia"
+                aria-label="Facebook"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/appacdmgaia"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 APPACDM - GAIA — Desenvolvido por
+            <span class="designer">Tomás Matos</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Script para mostrar nome do ficheiro selecionado
+      document
+        .getElementById("curriculo")
+        .addEventListener("change", function (e) {
+          const nomeDisplay = document.getElementById("nome-ficheiro");
+          if (e.target.files.length > 0) {
+            nomeDisplay.textContent = e.target.files[0].name;
+            nomeDisplay.style.color = "var(--primary-color)";
+          } else {
+            nomeDisplay.textContent = "Nenhum ficheiro selecionado";
+            nomeDisplay.style.color = "var(--text-light)";
+          }
+        });
+
+      // Script para menu móvel
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileToggle = document.querySelector(".mobile-menu-toggle");
+        const mainNav = document.querySelector(".main-nav");
+
+        if (mobileToggle) {
+          mobileToggle.addEventListener("click", function () {
+            this.classList.toggle("active");
+            mainNav.classList.toggle("active");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+.seccao-portal {
+  padding: 8rem 0 5rem;
+  background-color: var(--gray-light);
+}
+
+.grelha-portal {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.imagem-portal img {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  max-width: 100%;
+}
+
+.conteudo-portal {
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.ligacoes-portal .ligacao-portal {
+  display: inline-block;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  background-color: var(--gray-light);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.ligacao-portal:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-3px);
+}
+
+.espaco {
+  margin: 2rem 0;
+  border-bottom: 1px solid var(--gray);
+}
+
+.informacao-recrutamento h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.informacao-recrutamento p {
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.seccao-formulario-candidatura {
+  padding: 5rem 0;
+  background-color: var(--white);
+}
+
+.cabecalho-formulario {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cabecalho-formulario h2 {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.contentor-formulario {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--gray-light);
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.formulario-candidatura h3 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.grupo-formulario {
+  margin-bottom: 1.5rem;
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea,
+.grupo-formulario select {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid var(--gray);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: var(--transition);
+  background-color: var(--white);
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario textarea:focus,
+.grupo-formulario select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(20, 63, 157, 0.1);
+}
+
+.linha-formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.largura-completa {
+  grid-column: 1 / -1;
+}
+
+.carregamento-ficheiro {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+.carregamento-ficheiro label {
+  display: block;
+  padding: 0.875rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  text-align: center;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.carregamento-ficheiro label:hover {
+  background-color: var(--primary-dark);
+}
+
+.carregamento-ficheiro input[type="file"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.nome-ficheiro {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.submissao-formulario {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--gray);
+}
+
+.consentimento-formulario {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(20, 63, 157, 0.05);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.consentimento-formulario small {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .grelha-portal {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .imagem-portal {
+    order: -1;
+  }
+
+  .conteudo-portal {
+    padding: 2rem;
+  }
+
+  .contentor-formulario {
+    padding: 2rem;
+    margin: 0 1rem;
+  }
+
+  .linha-formulario {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cabecalho-formulario h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .seccao-portal {
+    padding: 6rem 0 3rem;
+  }
+
+  .contentor-formulario {
+    padding: 1.5rem;
+  }
+
+  .formulario-candidatura h3 {
+    font-size: 1.3rem;
+  }
+}

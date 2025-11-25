@@ -1,0 +1,36 @@
+.tab-container{
+    position: absolute;
+    padding: 20px;
+}
+
+.tab{
+    display: none;
+    padding: 30px;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+    background-color: white;
+}
+
+.tab-button {
+    display: block;
+    padding: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.active, .tab-button:hover {
+    background-color: #ccc;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+.tab ul li{
+    text-decoration: none;
+    list-style-type: decimal-leading-zero;
+}

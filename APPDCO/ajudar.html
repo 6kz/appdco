@@ -1,0 +1,734 @@
+<!-- Made by Tomás Matos | Internship from Colégio de Gaia - Escola Católica | Reachable on tomasmatos007@gmail.com -->
+
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Quero Ajudar | APPACDM — Vila Nova de Gaia | Uma vida a cultivar sorrisos
+    </title>
+    <meta name="author" content="APPACDM GAIA" />
+    <meta
+      name="description"
+      content="Saiba como pode ajudar a APPACDM de Vila Nova de Gaia na sua missão de apoiar pessoas com deficiência intelectual."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/uploads/shortcut_icon.png"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/global_organized.css" />
+
+    <link rel="stylesheet" href="css/ajudar.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="primary-header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">
+          <img
+            src="assets/uploads/50anos.jpg"
+            alt="Logótipo 50 anos da APPACDM Gaia"
+          />
+        </a>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Bem-vindo</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="ajudar.html" class="nav-link active">Quero ajudar</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link"
+                >Instituição <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="instituicao/mensagem-presidente.html"
+                    >Mensagem do Presidente</a
+                  >
+                </li>
+                <li>
+                  <a href="instituicao/missao-visao-valores.html"
+                    >Missão, Visão e Valores</a
+                  >
+                </li>
+                <li>
+                  <a href="instituicao/orgaos-sociais.html">Órgãos Sociais</a>
+                </li>
+
+                <li>
+                  <a href="instituicao/recursos-humanos.html"
+                    >Recursos Humanos</a
+                  >
+                </li>
+                <li>
+                  <a href="instituicao/livro-reclamacoes.html"
+                    >Livro de Reclamações</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="servicos.html" class="nav-link">Serviços</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="projetos.html" class="nav-link"
+                >Projetos <i class="fa-solid"></i
+              ></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contactos.html" class="nav-link">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Abandonado
+        <button class="mobile-menu-toggle" aria-label="Menu principal">
+          <span class="hamburger"></span>
+        </button>-->
+      </div>
+    </header>
+
+    <main>
+      <!-- Seccão Hero -->
+      <section class="ajudar-hero">
+        <div class="container">
+          <h1 class="ajudar-title">Como Ajudar</h1>
+          <p class="ajudar-subtitle">
+            A sua contribuição é fundamental para continuarmos a apoiar pessoas
+            com deficiência intelectual e incapacidade. Conheça as diversas
+            formas de colaborar com a nossa missão.
+          </p>
+        </div>
+      </section>
+
+      <!-- Ajudar, grid cards -->
+      <section class="ajudar-options">
+        <div class="container">
+          <h2 class="seccao-title">Maneiras de Ajudar</h2>
+          <p class="seccao-description">
+            Existem várias formas de apoiar o trabalho da APPACDM de Vila Nova
+            de Gaia. Escolha a que melhor se adequa a si:
+          </p>
+
+          <div class="ajudar-grid">
+            <div class="ajudar-card">
+              <div class="ajudar-icon">
+                <i class="fas fa-hand-holding-heart"></i>
+              </div>
+              <h3>Donativos</h3>
+              <p>
+                Contribua com um donativo pontual ou regular para ajudar a
+                manter os nossos serviços e apoiar os nossos utentes.
+              </p>
+              <a class="btn-donate" id="btn-donativos"> Fazer Donativo </a>
+            </div>
+
+            <div class="ajudar-card">
+              <div class="ajudar-icon">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+              <h3>Loja Divers'arte</h3>
+              <p>
+                Adquira produtos únicos criados pelos nossos utentes na nossa
+                loja online Divers'arte.
+              </p>
+              <a class="btn-donate" id="btn-divers">Saber Mais</a>
+            </div>
+
+            <div class="ajudar-card">
+              <div class="ajudar-icon">
+                <i class="fas fa-user-friends"></i>
+              </div>
+              <h3>Voluntariado</h3>
+              <p>
+                Ofereça o seu tempo e competências como voluntário nas nossas
+                atividades e eventos.
+              </p>
+              <a class="btn-donate" id="btn-voluntario"> Ser Voluntário </a>
+            </div>
+          </div>
+
+          <div class="ajudar-grid" style="margin-top: 2rem">
+            <div class="ajudar-card">
+              <div class="ajudar-icon">
+                <i class="fas fa-percentage"></i>
+              </div>
+              <h3>Consignação IRS</h3>
+              <p>
+                Consigne 0,5% do seu IRS à APPACDM de Vila Nova de Gaia sem
+                qualquer custo adicional para si.
+              </p>
+              <a class="btn-donate" id="btn-irs">Saber Mais</a>
+            </div>
+
+            <div class="ajudar-card">
+              <div class="ajudar-icon">
+                <i class="fas fa-id-card"></i>
+              </div>
+              <h3>Faça-se Sócio</h3>
+              <p>
+                Junte-se à nossa família! Torne-se sócio da APPACDM de Vila Nova
+                de Gaia e faça parte desta causa.
+              </p>
+              <a class="btn-donate" id="btn-socio">Saber Mais</a>
+            </div>
+
+            <div class="ajudar-card">
+              <div class="ajudar-icon">
+                <i class="fas fa-gift"></i>
+              </div>
+              <h3>Doação de Bens</h3>
+              <p>
+                Doe equipamentos, materiais ou outros bens necessários para o
+                funcionamento das nossas atividades.
+              </p>
+              <a class="btn-donate" id="btn-db">Doar Bens</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Secção Voluntariado -->
+      <section class="voluntario-seccao">
+        <div class="container">
+          <div class="voluntario-content">
+            <div class="voluntario-image">
+              <img
+                src="assets/uploads/gettyimages-649645640-612x612.jpg"
+                alt="Voluntários na APPACDM de Gaia"
+              />
+            </div>
+            <div class="voluntario-texto">
+              <h2>Torne-se Voluntário</h2>
+              <p>
+                O voluntariado é uma forma gratificante de contribuir para a
+                nossa missão. Como voluntário, poderá participar em diversas
+                atividades e eventos, conhecer pessoas extraordinárias e fazer a
+                diferença na vida de quem mais precisa.
+              </p>
+              <p style="margin-bottom: 1rem">
+                Procuramos pessoas com diferentes competências e
+                disponibilidades. Se deseja ser voluntário, preencha o
+                formulário de contacto e entraremos em contacto consigo.
+              </p>
+              <a href="contactos.html" class="btn btn-primary">Candidatar-me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testemunhos -->
+      <section class="testemunhos">
+        <div class="container">
+          <h2 class="seccao-title">Testemunhos</h2>
+          <div class="testemunho-grid">
+            <div class="testemunho-card">
+              &nbsp;
+              <p class="testemunho-text">
+                Ser voluntário na APPACDM de Gaia mudou completamente a minha
+                perspetiva sobre a vida. O carinho e alegria que recebo dos
+                utentes são incomparáveis.
+              </p>
+              <p class="testemunho-author">— Maria Silva, Voluntária</p>
+            </div>
+
+            <div class="testemunho-card">
+              &nbsp;
+
+              <p class="testemunho-text">
+                A nossa parceria com a APPACDM tem sido extremamente
+                gratificante. Sentimos que estamos a contribuir ativamente para
+                uma causa importante.
+              </p>
+              <p class="testemunho-author">— João Santos, Empresa Parceira</p>
+            </div>
+
+            <div class="testemunho-card">
+              &nbsp;
+
+              <p class="testemunho-text">
+                Consignar o IRS foi uma forma simples de ajudar. É um pequeno
+                gesto que não custa nada e faz toda a diferença para a
+                instituição.
+              </p>
+              <p class="testemunho-author">— Ana Ferreira, Doadora</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Parceiros -->
+      <section class="parceiros-seccao">
+        <div class="container">
+          <h2 class="seccao-title">Parceiros que nos apoiam</h2>
+          <p class="seccao-description">
+            Agradecemos a todos os nossos parceiros pelo seu apoio contínuo:
+          </p>
+
+          <div class="parceiros-grid">
+            <div class="partner-logo">
+              <img
+                src="assets/uploads/RP_Edu_2024 (1).png"
+                alt="Logótipo Républica Portuguesa da Educação 2024"
+              />
+            </div>
+            <div class="partner-logo">
+              <img
+                src="assets/uploads/Segurança_Social_(Logo).png "
+                alt="Logótipo Segurança Social"
+              />
+            </div>
+            <div class="partner-logo">
+              <img
+                src="assets/uploads/gaia_todo_um_mundo.png"
+                alt="Logótipo Câmara Municipal de Gaia"
+              />
+            </div>
+            <div class="partner-logo">
+              <img src="assets/uploads/cnis-logo.png" alt="Logótipo CNIS" />
+            </div>
+            <div class="partner-logo">
+              <img src="assets/uploads/DGESTE.png" alt="Logótipo DGESTE" />
+            </div>
+            <div class="partner-logo">
+              <img
+                src="assets/uploads/novo_logo_udipss_big_v4.png"
+                alt="Logótipo UDIPSS Porto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contactos -->
+      <section class="newsletter-seccao">
+        <div class="container">
+          <div class="newsletter-conteudo">
+            <h2>Tem alguma questão?</h2>
+            <p>
+              Se pretende obter mais informações sobre como pode ajudar, não
+              hesite em contactar-nos.
+            </p>
+            <a href="contactos.html" class="btn btn-primary">Contacte-nos</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-top">
+          <button
+            class="back-to-top"
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+          >
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+        </div>
+
+        <div class="footer-conteudo">
+          <div class="footer-info">
+            <h3>APPACDM de Vila Nova de Gaia</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Rua Madre de Deus, 227
+              4430-138 V.N. Gaia
+            </p>
+            <p>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+351227151340">227 151 340</a
+              ><a style="font-size: 10px">
+                &nbsp;&nbsp;&nbsp;(Chamada para a rede fixa nacional)</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:geral@appacdm-gaia.org.pt"
+                >geral@appacdm-gaia.org.pt</a
+              >
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li>
+                <a href="regime-geral-prevencao-corrupcao.html"
+                  >Regime Geral de Prevenção da Corrupção</a
+                >
+              </li>
+              <li>
+                <a href="canal-denuncia-interna.html"
+                  >Canal de Denúncia Interna</a
+                >
+              </li>
+              <li>
+                <a href="instituicao/livro-reclamacoes.html"
+                  >Livro de Reclamações</a
+                >
+              </li>
+              <li>
+                <a href="politicas-privacidade.html"
+                  >Políticas de Privacidade</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h3>Siga-nos</h3>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/appacdmvngaia"
+                aria-label="Facebook"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/appacdmgaia"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 APPACDM - GAIA — Desenvolvido por
+            <span class="designer">Tomás Matos</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modais -->
+    <!-- Modal Faça-se Sócio -->
+    <div id="modal-socio" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Faça-se Sócio</h2>
+        <p>
+          Qualquer cidadão se poderá propor a sócio da APPACDM - V. N. de Gaia.
+          Para o efeito deverá proceder das seguintes formas:
+        </p>
+        <ul>
+          <li>
+            Preencher a proposta de sócio
+            <a href="#" style="color: #0078d7; text-decoration: underline"
+              >AQUI</a
+            >, e enviar para
+            <a href="mailto:geral@appacdm-gaia.org.pt" style="color: #0078d7"
+              >geral@appacdm-gaia.org.pt</a
+            >
+          </li>
+          <li>
+            Dirigir-se pessoalmente ou por outro meio a um dos nossos pólos (ver
+            em Contactos) e manifestar interesse em ser associado, solicitando o
+            impresso para preenchimento.
+          </li>
+        </ul>
+        <p style="font-weight: bold; text-align: center; margin-top: 2rem">
+          OBRIGADO!
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal Donativos -->
+    <div id="modal-donativos" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Donativos</h2>
+        <p>
+          O Estatuto dos benefícios fiscais estabelece uma majoração de 130% do
+          valor doado às IPSS em sede de IRS ou IRC.
+        </p>
+        <p>
+          Colabore com o seu donativo para o IBAN:<br />
+          <strong>PT50 0007 0000 00314778387 23 - NOVO BANCO</strong>
+        </p>
+
+        <h3 style="margin-top: 2rem; color: #0078d7">MBWay:</h3>
+        <p>
+          Também pode apoiar a APPACDM de Vila Nova de Gaia com o MBWay!<br />
+          Para fazer uma contribuição apenas tem de ter instalado no seu
+          telemóvel a app MBWay. Um gesto que pode ser feito a partir de
+          qualquer lugar, e em apenas alguns segundos:
+        </p>
+
+        <ol>
+          <li>Aceda à app MBWay e escolha a opção "Ser Solidário"</li>
+          <li>
+            Procure na lista de instituições a APPACDM de Vila Nova de Gaia
+          </li>
+          <li>Insira o valor com o qual quer contribuir</li>
+          <li>Introduza o seu pin MBWay</li>
+          <li>Finalize o donativo</li>
+        </ol>
+
+        <p>Este tipo de donativo está isento de qualquer custo para si.</p>
+        <p>Também pode:</p>
+
+        <ol>
+          <li>Abrir a APP MB WAY</li>
+          <li>Carregar no ícone "pagar com MB WAY"</li>
+          <li>Ler o qr code e definir o valor do donativo</li>
+        </ol>
+
+        <div class="qr-code">
+          <img src="assets/uploads/MBWay.jpg" alt="QR Code MBWay" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Divers'Arte -->
+    <div id="modal-divers" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Loja Divers'Arte</h2>
+        <p>
+          Conheça a nossa loja online com peças únicas, criadas por pessoas com
+          deficiência intelectual na APPACDM de Vila Nova de Gaia.
+        </p>
+        <p>Compre e apoie a inclusão através da arte!</p>
+        <p>
+          Os nossos artigos são produzidos por pessoas com deficiência
+          intelectual na <strong>APPACDM de Vila Nova de Gaia</strong>. Aqui
+          promovemos a Integração Social do Cidadão com Deficiência Mental e
+          damos apoio a cerca de 700 pessoas com deficiência no Concelho de
+          Gaia.
+        </p>
+        <p>
+          Ao adquirir os nossos artigos vai estar a promover a continuidade de
+          maior autonomia e inclusão, junto das pessoas que apoiamos.
+        </p>
+        <br />
+        <p>
+          <strong>Divers'Arte APPACDM Gaia </strong><br />
+          <a href="https://www.facebook.com/profile.php?id=61559893135447"
+            >Facebook</a
+          >
+          <br />
+          <a href="https://www.instagram.com/diversarte_appacdm/">Instagram</a>
+        </p>
+        <p><strong>Contacto</strong></p>
+        <p>
+          E-mail: diversarte@appacdm-gaia.org.pt <br />
+          Número de telefone: 227151340
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal Consignação IRS -->
+    <div id="modal-irs" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Consignação IRS</h2>
+        <p>
+          Nos termos do n.º 6 do art.º 32º da Lei n.16/2001, de 22 de junho, a
+          consignação de IRS é uma possibilidade que todos os contribuintes têm
+          ao seu dispor para ajudar uma Instituição Particular de Solidariedade
+          Social (IPSS), e consiste em decidir atribuir 0,5% da coleta de
+          imposto para outra entidade, em vez de reverter para os cofres do
+          Estado.
+        </p>
+        <p>
+          Este gesto não comporta nenhum custo acrescido para o contribuinte,
+          pois o imposto a pagar e o montante a ser reembolsado nunca será
+          alterado. Ser solidário é um ato de responsabilidade social.
+        </p>
+        <p>
+          Para ajudar basta preencher no Anexo H da sua declaração de IRS, no
+          campo 901, o número de identificação fiscal da
+          <strong>APPACDM de Vila Nova de Gaia – 504646893</strong>
+        </p>
+
+        <div class="qr-code">
+          <img src="#" alt="Imagem demonstrativa de consignação IRS" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Voluntariado -->
+    <div id="modal-voluntario" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Seja Voluntário</h2>
+        <p>
+          A instituição conta com a colaboração, em regime de voluntariado, de
+          diversas pessoas, nas quais se incluem técnicos superiores
+          qualificados, incluindo os membros da Direção.
+        </p>
+
+        <h3 style="margin-top: 1.5rem; color: #0078d7">
+          Deveres dos voluntários
+        </h3>
+        <ul>
+          <li>
+            Os voluntários devem seguir as mesmas regras e cumprir com os mesmos
+            procedimentos que os colaboradores da instituição.
+          </li>
+        </ul>
+
+        <h3 style="margin-top: 1.5rem; color: #0078d7">
+          Direitos dos voluntários:
+        </h3>
+        <ul>
+          <li>
+            Desenvolver tarefas de acordo com os seus conhecimentos e
+            competências;
+          </li>
+          <li>Receber apoio no desempenho das suas tarefas;</li>
+          <li>Ter um ambiente de trabalho seguro;</li>
+          <li>Ser reconhecido pelo trabalho que desenvolve;</li>
+          <li>
+            Ter acesso à sala de refeições, ao serviço de bar, a vestuário de
+            trabalho e a equipamento de proteção, à semelhança do que acontece
+            com os restantes colaboradores;
+          </li>
+          <li>Ter seguro de acidentes pessoais.</li>
+        </ul>
+
+        <h3 style="margin-top: 1.5rem; color: #0078d7">
+          Como candidatar-se a voluntário:
+        </h3>
+        <p>
+          Por favor contacte-nos, para o email
+          <a href="mailto:geral@appacdm-gaia.org.pt" style="color: #0078d7"
+            >geral@appacdm-gaia.org.pt</a
+          >
+          ou dirija-se às nossas instalações da Rua Madre de Deus, n.º 227,
+          4430-138 V.N. de Gaia e peça para preencher uma Ficha de Candidatura,
+          informando que pretende ser voluntário.
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal Doar Bens -->
+    <div id="modal-db" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Doação de Bens</h2>
+        <p>
+          Doar bens é uma forma importante de apoiar a APPACDM de Vila Nova de
+          Gaia. Aceitamos quaisqueres doações de diversos tipos de bens.
+        </p>
+        <p>
+          Contacte-nos para saber mais sobre como pode contribuir com doações de
+          bens, como equipamentos, materiais ou outros itens que possam ser
+          úteis para os nossos utentes e atividades.
+        </p>
+        <p>
+          Para mais informações, por favor envie um email para
+          <a href="mailto:geral@appacdm-gaia.org.pt" style="color: #0078d7"
+            >geral@appacdm-gaia.org.pt</a
+          >.
+        </p>
+        <p>OU</p>
+        <p>
+          <a href="contactos.html" class="btn btn-primary">Contacte-nos</a>
+        </p>
+        <p style="font-weight: bold; text-align: center; margin-top: 2rem">
+          OBRIGADO!
+        </p>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const modals = {
+          socio: document.getElementById("modal-socio"),
+          donativos: document.getElementById("modal-donativos"),
+          irs: document.getElementById("modal-irs"),
+          voluntario: document.getElementById("modal-voluntario"),
+          divers: document.getElementById("modal-divers"),
+          db: document.getElementById("modal-db"),
+        };
+
+        document
+          .getElementById("btn-socio")
+          .addEventListener("click", function () {
+            modals.socio.style.display = "block";
+          });
+
+        document
+          .getElementById("btn-donativos")
+          .addEventListener("click", function () {
+            modals.donativos.style.display = "block";
+          });
+
+        document
+          .getElementById("btn-irs")
+          .addEventListener("click", function () {
+            modals.irs.style.display = "block";
+          });
+
+        document
+          .getElementById("btn-divers")
+          .addEventListener("click", function () {
+            modals.divers.style.display = "block";
+          });
+
+        document
+          .getElementById("btn-voluntario")
+          .addEventListener("click", function () {
+            modals.voluntario.style.display = "block";
+          });
+
+        document
+          .getElementById("btn-db")
+          .addEventListener("click", function () {
+            modals.db.style.display = "block";
+          });
+
+        const closeButtons = document.querySelectorAll(".close-modal");
+        closeButtons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            for (const key in modals) {
+              modals[key].style.display = "none";
+            }
+          });
+        });
+
+        window.addEventListener("click", function (event) {
+          for (const key in modals) {
+            if (event.target === modals[key]) {
+              modals[key].style.display = "none";
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
