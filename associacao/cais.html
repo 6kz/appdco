@@ -1,23 +1,64 @@
-<!-- Made by Tomás Matos | Reachable on tomasmatos007@gmail.com -->
-  
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APPCDO | Livro de Reclamações</title>
+    <title>APPCDO | Cais do Ouro</title>
     <meta name="author" content="APPCDO">
-    <meta name="description" content="Livro de Reclamações">
-    
+    <meta name="description" content="Informações e serviços do Cais do Ouro">
+
     <link rel="shortcut icon" type="image/png" href="../assets/uploads/shortcut_icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/global_organized.css">
-    <link rel="stylesheet" href="../css/mp.css">
 
+    <style>
+        .cais-ouro-content {
+            /* Força o conteúdo a ocupar o espaço centralizado */
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            /* Alinha o texto à esquerda como na imagem */
+            padding-top: 2rem;
+        }
+
+        .cais-ouro-content h2 {
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .cais-ouro-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .cais-ouro-content ul li {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin-bottom: 10px;
+            /* Simular o estilo de lista sem bullets ou com bullets discretos */
+        }
+
+        .cais-ouro-content ul li::before {
+            content: "\2022";
+            /* Adiciona um bullet point simples */
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            margin-right: 0.5em;
+        }
+    </style>
 </head>
+
 <body>
 
     <header class="primary-header">
@@ -25,11 +66,11 @@
             <a href="../" class="logo">
                 <img src="../assets/uploads/APPCDO.png" alt="Logótipo da APPCDO">
             </a>
-            
+
             <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
                 <span class="hamburger"></span>
             </button>
-            
+
             <nav class="main-nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="../" class="nav-link">Bem-vindo</a></li>
@@ -53,70 +94,63 @@
     </header>
 
     <main>
-        <!-- Page Title seccao -->
-        <section class="page-title-seccao">
+        <section class="page-header">
             <div class="container">
-                <h1 class="page-title">Mensagem do Presidente</h1>
+                <br /><br /><br />
+                <h1>Cais do Ouro</h1>
             </div>
         </section>
 
-        <!-- Message Content seccao -->
-        <section class="message-content-seccao">
+        <section class="livro-reclamacoes-seccao">
             <div class="container">
-                <div class="message-grid">
-                    <div class="message-image">
-                        <img src="../assets/uploads/APPCDO.png" alt="Presidente da APPCDO">
-                    </div>
-                    <div class="message-content">
-                        <div class="message-text">
-                            <p>Caros Associados e Amigos do Cais do Ouro,</p>
-                            
-                            <p>É com grande honra e sentido de missão que me dirijo a vós na qualidade de Presidente da APPCDO.</p>
-                            
-                                    <p>O Cais do Ouro é mais do que um ponto de atracagem; é o <b>coração de uma tradição secular</b> que nos une. Somos pescadores — profissionais e lúdicos — e partilhamos um profundo <b>respeito pelo Rio Douro</b> e pelos seus recursos.</p>                            
-
-                            <p>A nossa Associação existe para <b>defender este património</b>, garantindo que as vozes de todos os pescadores sejam ouvidas perante as entidades. O nosso compromisso é inabalável: <b>trabalhar pela pesca sustentável</b>, pelo apoio mútuo entre os membros e pela preservação do nosso meio ambiente.</p>
-                            
-                            <p>Conto com o empenho de cada um de vós para continuarmos a fazer da APPCDO uma força de união e progresso. <b>Juntos, asseguramos que o Douro continue a ser fonte de sustento, lazer e orgulho para as futuras gerações.</b></p>                            
-                            
-                            <p>Com os meus melhores cumprimentos,</p>
-                            <div class="signature">
-                                <p><strong><em>C. Matos</em></strong></p>
-                                <p><em>Presidente da Direção da APPCDO</em></p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="cais-ouro-content">
+                    <h2>No Cais do Ouro pode contar com:</h2>
+                    <ul>
+                        <li><b>16 poitas de amarração</b> a montante.</li>
+                        <li>A jusante encontram-se <b>10 poitas de amarração.</b></li>
+                        <li><b>Embarcação de apoio</b> com motor para acesso às poitas.</li>
+                        <li><b>Sistema de Vídeo Vigilância</b> 24 horas por dia.</li>
+                    </ul>
                 </div>
             </div>
         </section>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-
     </main>
 
-<!-- Footer -->
     <footer class="main-footer">
         <div class="container">
             <div class="footer-top">
                 <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-            <i class="fa-solid fa-arrow-up"></i>
-        </button>
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
             </div>
 
             <div class="footer-conteudo">
                 <div class="footer-info">
                     <h3>APPCDO</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Rua do Ouro, Cais do Ouro 4150-552 Porto</p>
-                    <p><i class="fas fa-phone"></i> <a href="tel:+351222410991">222 410 991</a><a style="font-size: 10px;"> &nbsp;&nbsp;&nbsp;(Chamada para a rede fixa nacional)</a></p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:app.caisdoouro@sapo.pt">app.caisdoouro@sapo.pt</a></p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Rua do Ouro, Cais do Ouro
+                        4150-552 Porto
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+351222410991">222 410 991</a><a style="font-size: 10px">
+                            &nbsp;&nbsp;&nbsp;(Chamada para a rede fixa nacional)</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:app.caisdoouro@sapo.pt">app.caisdoouro@sapo.pt</a>
+                    </p>
                 </div>
 
                 <div class="footer-links">
                     <h3>Links Rápidos</h3>
                     <ul>
-                        <li><a href="../associacao/livro-reclamacoes">Livro de Reclamações</a></li>
-                        <li><a href="../politicas-privacidade">Políticas de Privacidade</a></li>
+                        <li>
+                            <a href="../associacao/livro-reclamacoes">Livro de Reclamações</a>
+                        </li>
+                        <li>
+                            <a href="../politicas-privacidade">Políticas de Privacidade</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -131,14 +165,15 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 APPCDO — Desenvolvido por <span class="designer"><a rel="stylesheet" href="https://github.com/6kz" style="color:white;">Tomás Matos</a></span></p>
+                <p>
+                    &copy; 2025 APPCDO — Desenvolvido por
+                    <span class="designer"><a rel="stylesheet" href="https://github.com/6kz" style="color: white">Tomás
+                            Matos</a></span>
+                </p>
             </div>
         </div>
     </footer>
-</footer>
 
-    <!-- Scripts -->
     <script src="../assets/js/mobile.js"></script>
-
 </body>
 </html>
