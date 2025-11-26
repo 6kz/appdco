@@ -18,6 +18,10 @@
   --header-height: 200px;
 }
 
+main{
+  margin-top: 120px;
+}
+
 .socio-hero {
   background-color: #0066cc;
   background-size: cover;

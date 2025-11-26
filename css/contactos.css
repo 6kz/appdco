@@ -1,0 +1,179 @@
+main{
+  margin-top: 120px;
+}
+
+.contact-page {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact-info {
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+  color: #26558b;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i {
+  width: 25px;
+  margin-right: 10px;
+  color: #143f9d;
+}
+
+.contact-info a {
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #143f9d;
+}
+
+.contact-form {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+  color: #26558b;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.locations-section {
+  margin-top: 60px;
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .locations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .locations-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.location-card {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.location-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.location-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.location-info {
+  padding: 20px;
+}
+
+.location-info h4 {
+  margin-bottom: 15px;
+  color: #26558b;
+}
+
+.location-info p {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.location-info i {
+  width: 20px;
+  margin-right: 10px;
+  margin-top: 3px;
+  color: #e94e1b;
+}
+
+.map-section {
+  margin-top: 0;
+  padding-bottom: 60px;
+}
+
+.map-container {
+  height: 450px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.page-title {
+  background-color: #26558b;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.page-title h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
