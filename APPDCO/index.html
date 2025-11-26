@@ -2,44 +2,40 @@
   
 <!DOCTYPE html>
 <html lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" conteudo="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APPCDO | Bem-vindo</title>
-    <meta name="author" conteudo="APPCDO">
-    <meta name="description" conteudo="Bem-vindo">
+    <meta name="author" content="APPCDO">
+    <meta name="description" content="Bem-vindo">
     
-    <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="assets/uploads/shortcut_icon.png">
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Main CSS -->
     <link rel="stylesheet" href="css/global_organized.css">
-
 </head>
 <body>
-    <!-- Header -->
+
     <header class="primary-header">
         <div class="container header-container">
             <a href="index.html" class="logo">
                 <img src="assets/uploads/APPCDO.jpg" alt="Logótipo da APPCDO">
             </a>
             
+            <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
             <nav class="main-nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="index.html" class="nav-link">Bem-vindo</a></li>
-                    
                     <li class="nav-item">
-                        <a href="socio.html" class="nav-link">Quero ser sócio</i></a>
+                        <a href="socio.html" class="nav-link">Quero ser sócio</a>
                     </li>
-                    
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link">Associação <i class="fa-solid fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
@@ -49,7 +45,6 @@
                             <li><a href="assets/uploads/file/REGULAMENTO DE UTILIZAÇÃO DA ÁREA CEDIDA PELA APDL À APPDCO.pdf">Regulamento de Utilização da Área Cedida Pela APDL à APPCDO</a></li>
                         </ul>
                     </li>
-                    
                     <li class="nav-item"><a href="contactos.html" class="nav-link">Contactos</a></li>
                 </ul>
             </nav>
@@ -138,6 +133,7 @@
         </div>
     </footer>
 
-</head>
+    <!-- Scripts -->
+     <script src="assets/js/mobile.js"></script>
 </body>
 </html>
