@@ -60,6 +60,10 @@ a:hover {
   color: var(--primary-color);
 }
 
+main {
+  margin-top: 60px;
+}
+
 /* main container */
 .container {
   width: 100%;
@@ -771,6 +775,10 @@ a:focus,
 }
 
 @media (max-width: 768px) {
+  main {
+    margin-top: 60px;
+  }
+
   .main-nav {
     position: fixed;
     top: var(--header-height);
@@ -1032,9 +1040,7 @@ a:focus,
 }
 
 /* livro reclamações e outros*/
-main {
-  margin-top: 125px;
-}
+
 
 .livro-reclamacoes-seccao {
   padding: 4rem 0;
