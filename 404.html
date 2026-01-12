@@ -1,0 +1,343 @@
+<!-- Made by Tomás Matos | Reachable on tomasmatos007@gmail.com -->
+
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APPDCO | Página Não Encontrada</title>
+    <meta name="author" content="APPDCO" />
+    <meta name="description" content="Página não encontrada" />
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/uploads/shortcut_icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global_organized.css" />
+    <style>
+      .error-section {
+        min-height: calc(100vh - 200px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      }
+
+      .error-container {
+        text-align: center;
+        max-width: 600px;
+      }
+
+      .error-code {
+        font-size: 150px;
+        font-weight: 700;
+        color: #2c3e50;
+        line-height: 1;
+        margin: 0;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .error-icon {
+        font-size: 80px;
+        color: #3498db;
+        margin: 20px 0;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .error-title {
+        font-size: 32px;
+        font-weight: 600;
+        color: #2c3e50;
+        margin: 20px 0 15px;
+      }
+
+      .error-message {
+        font-size: 18px;
+        color: #7f8c8d;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      .error-buttons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .btn-home {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 30px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        font-size: 16px;
+      }
+
+      .btn-home:hover {
+        background-color: #2980b9;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+      }
+
+      .btn-contact {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 30px;
+        background-color: transparent;
+        color: #3498db;
+        text-decoration: none;
+        border: 2px solid #3498db;
+        border-radius: 5px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        font-size: 16px;
+      }
+
+      .btn-contact:hover {
+        background-color: #3498db;
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      .error-fish {
+        margin-top: 40px;
+        opacity: 0.3;
+        font-size: 40px;
+        animation: swim 5s ease-in-out infinite;
+      }
+
+      @keyframes swim {
+        0%,
+        100% {
+          transform: translateX(-20px);
+        }
+        50% {
+          transform: translateX(20px);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .error-code {
+          font-size: 100px;
+        }
+
+        .error-icon {
+          font-size: 60px;
+        }
+
+        .error-title {
+          font-size: 24px;
+        }
+
+        .error-message {
+          font-size: 16px;
+        }
+
+        .error-buttons {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .btn-home,
+        .btn-contact {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="container header-container">
+        <a href="/" class="logo">
+          <img src="assets/uploads/APPDCO.png" alt="Logótipo da APPDCO" />
+        </a>
+
+        <button
+          class="mobile-menu-toggle"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+          <span class="hamburger"></span>
+        </button>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Bem-vindo</a>
+            </li>
+            <li class="nav-item">
+              <a href="socio" class="nav-link">Quero ser sócio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link"
+                >Associação <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="associacao/mensagem-presidente"
+                    >Mensagem do Presidente</a
+                  >
+                </li>
+                <li>
+                  <a href="associacao/missao-visao-valores"
+                    >Missão, Visão e Valores</a
+                  >
+                </li>
+                <li>
+                  <a href="associacao/livro-reclamacoes"
+                    >Livro de Reclamações</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="assets/uploads/file/REGULAMENTO DE UTILIZAÇÃO DA ÁREA CEDIDA PELA APDL À APPDCO.pdf"
+                    >Regulamento de Utilização da Área Cedida Pela APDL à
+                    APPDCO</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="contactos" class="nav-link">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main style="margin-top: 200px">
+      <section class="error-section">
+        <div class="error-container">
+          <h1 class="error-code">404</h1>
+          <div class="error-icon">
+            <i class="fas fa-anchor"></i>
+          </div>
+          <h2 class="error-title">Página Não Encontrada</h2>
+          <p class="error-message">
+            Pedimos desculpa, a página que procura não existe ou foi movida.<br />
+            Talvez tenha navegado para águas desconhecidas!
+          </p>
+          <div class="error-buttons">
+            <a href="/" class="btn-home">
+              <i class="fas fa-home"></i>
+              Voltar à Página Inicial
+            </a>
+            <a href="contactos" class="btn-contact">
+              <i class="fas fa-envelope"></i>
+              Contacte-nos
+            </a>
+          </div>
+          <div class="error-fish">
+            <i class="fas fa-fish"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-top">
+          <button
+            class="back-to-top"
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+          >
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+        </div>
+
+        <div class="footer-conteudo">
+          <div class="footer-info">
+            <h3>APPDCO</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Rua do Ouro, Cais do Ouro
+              4150-552 Porto
+            </p>
+            <p>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+351222410991">222 410 991</a
+              ><a style="font-size: 10px">
+                &nbsp;&nbsp;&nbsp;(Chamada para a rede fixa nacional)</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:app.caisdoouro@sapo.pt">app.caisdoouro@sapo.pt</a>
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li>
+                <a href="associacao/livro-reclamacoes">Livro de Reclamações</a>
+              </li>
+              <li>
+                <a href="politicas-privacidade">Políticas de Privacidade</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h3>Siga-nos</h3>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/groups/211514556264238/"
+                aria-label="Facebook"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 APPDCO – Desenvolvido por
+            <span class="designer"
+              ><a
+                rel="stylesheet"
+                href="https://github.com/6kz"
+                style="color: white"
+                >Tomás Matos</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/mobile.js"></script>
+  </body>
+</html>
